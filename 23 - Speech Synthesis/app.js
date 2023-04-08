@@ -10,7 +10,7 @@ msg.text = document.querySelector('[name="text"]').value;
 function populateVoices() {
     voices = this.getVoices();
     voicesDropdown.innerHTML = voices
-        .filter(voice => voice.lang.includes('en'))
+        .filter(voice => voice.lang.includes('ru'))
         .map(voice => `<option value="${voice.name}">${voice.name}(${voice.lang})</option>`)
         .join('');
 }
